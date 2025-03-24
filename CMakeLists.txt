@@ -22,7 +22,7 @@ set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 #
 
 # Specify the CEF distribution version.
-set(CEF_VERSION "130.1.14+gde32089+chromium-130.0.6723.92")
+set(CEF_VERSION "134.3.7+g37e6a40+chromium-134.0.6998.118")
 
 # Determine the platform.
 if("${CMAKE_SYSTEM_NAME}" STREQUAL "Darwin")

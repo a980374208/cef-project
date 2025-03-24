@@ -66,6 +66,7 @@ if(GEN_NINJA OR GEN_MAKEFILES)
 else()
   set(EXAMPLE_TARGET_OUT_DIR "${CMAKE_BINARY_DIR}/$<CONFIGURATION>")
 endif()
+set(CEF_TARGET_OUT_DIR "${EXAMPLE_TARGET_OUT_DIR}")
 
 # Set properties common to all example targets.
 macro(SET_EXAMPLE_PROPERTIES target)

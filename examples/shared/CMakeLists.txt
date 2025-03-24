@@ -139,6 +139,9 @@ if(OS_WINDOWS)
     # Logical target used to link the cef_sandbox library.
     ADD_LOGICAL_TARGET("cef_sandbox_lib" "${CEF_SANDBOX_LIB_DEBUG}" "${CEF_SANDBOX_LIB_RELEASE}")
     target_link_libraries(${SHARED_TARGET} cef_sandbox_lib ${CEF_SANDBOX_STANDARD_LIBS})
+
+    # Set LPAC ACLs required for Windows sandbox support.
+    SET_LPAC_ACLS("${SHARED_TARGET}")
   endif()
 
   # Copy binary and resource files to the target output directory.
